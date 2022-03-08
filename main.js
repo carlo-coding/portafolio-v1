@@ -8,10 +8,7 @@ let min800px = window.matchMedia("(min-width: 800px)");
 
 const cards = document.querySelectorAll("#skills .card");
 
-
-cards.forEach(card=> {
-    VanillaTilt.init(card)
-})
+screenTest(min800px)
 
 function screenTest(e) {
     if(e.matches) {
