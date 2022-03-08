@@ -1,0 +1,73 @@
+#skills .card:nth-of-type(1)
+{
+    background: #EAD41C;
+    --clr-card: #EAD41C;
+}
+#JG
+{
+    fill: #000;
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+#SG
+{
+    transform-origin: center;
+    fill: #000;
+    animation-name: rotate;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+
+#skills .card:nth-of-type(2)
+{
+    background: #2965F1;
+    --clr-card: #2965F1;
+}
+
+#css_logo {
+    transform-origin: center;
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+#skills .card:nth-of-type(3)
+{
+    background: #EF652A;
+    --clr-card: #EF652A;
+}
+
+#html_logo {
+    transform-origin: rotate;
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    4% {transform: rotate(45deg);}
+    10% {transform: rotate(90deg);}
+    20% {transform: rotate(135deg);}
+    22% {transform: rotate(180deg);}
+    25% {transform: rotate(0deg);}
+}
+
+@keyframes bounce {
+    0%, 4%, 10%, 16%, 20% {transform: translateY(0);} 
+    8% {transform: translateY(-15px);} 
+    12% {transform: translateY(-7px);} 
+} 
